@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+  <bean id="obj" class="com.injection.injectionSetter.Customer">  
+<property name="id" value="1"></property>  
+<property name="name" value="Sachin Yadav"></property>  
+<property name="address">
+            <list>
+                <ref bean="address1" />
+            </list>
+        </property>  
+</bean>  
+
+<bean id="address1" class="com.injection.injectionSetter.Address">  
+<property name="addressLine1" value="51,Lohianagar"></property>  
+<property name="city" value="Ghaziabad"></property>  
+<property name="state" value="UP"></property>  
+<property name="country" value="India"></property>  
+</bean>  
+  <bean id="test" class="com.injection.injectionSetter.InjectionSetterApplicationTests">
+        <!-- set properties, etc. -->
+    </bean>
+
+  
+</beans>  
