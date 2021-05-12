@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<bean id="obj" class="com.InjectionCollection.InjectionCollection.Question">  
+<constructor-arg value="1"></constructor-arg>  
+<constructor-arg value="What is Spring Injection Collection"></constructor-arg>  
+<constructor-arg>  
+<list>  
+<value>This can be used to inject a collection of name-value pairs where the name and value are both Strings.</value>  
+<value>To pass plural values like Java Collection types such as List, Set, Map, and Properties. To handle the situation, Spring offers four types of collection configuration elements </value>  
+<value>use either list or set to wire any implementation of java.util.Collection or an array.</value>  
+</list>  
+</constructor-arg>  
+</bean>  
+  
+</beans>  
